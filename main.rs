@@ -23,7 +23,7 @@ fn is_an_armstrong_number(number: i32) -> bool {
         sum += number_vec[i].pow(number_vec.len() as u32)
     }
     
-    let result: bool = if sum == number {
+    let result: bool = if sum == number && number > 0 {
         true
     } else {
         false
